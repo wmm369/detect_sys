@@ -1,1 +1,8 @@
 # 系统检测应用
+测试环境：ubuntu16.04
+golang: go1.8
+
+## GetEnvFunc() 获取环境变量函数
+
+## GetEnvSvr() 获取cpu核数
+
