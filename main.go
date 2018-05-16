@@ -1,12 +1,13 @@
 package main
 
 import (
-	"strconv"
 	"bytes"
-	"strings"
+	"detect_sys/ming"
 	"fmt"
 	"os"
 	"os/exec"
+	/* 	"strconv" */
+	"strings"
 )
 
 // OsEnv 系统环境变量获取
@@ -20,6 +21,7 @@ func main() {
 	fmt.Println("start")
 	fmt.Println(GetEnvFunc())
 	GetEnvSvr()
+	ming.StrFunc()
 	fmt.Println("end")
 }
 
@@ -31,8 +33,8 @@ func GetEnvFunc() (res OsEnv) {
 	return res
 }
 
-// GetEnvSvr 获取cpu核数
-func GetEnvSvr() int{
+// GetEnvSvr 1.获取cpu核数
+func GetEnvSvr() int {
 
 	cmd := exec.Command("/bin/bash", "-c", "lscpu |grep 'CPU(s)' |grep -v 'li'|grep -v '-'|awk  '{print $1}'")
 	var out bytes.Buffer
@@ -47,7 +49,7 @@ func GetEnvSvr() int{
 	str := strings.Replace(out.String(), " ", "", -1)
 	// 去除换行符
 	str = strings.Replace(str, "\n", "", -1)
-    //number, _ := strconv.Atoi(str)
-	fmt.Println("CPU核数："+str)
+	//number, _ := strconv.Atoi(str)
+	fmt.Println("CPU核数：" + str)
 	return 1
 }
