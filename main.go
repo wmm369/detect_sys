@@ -20,15 +20,21 @@ type OsEnv struct {
 func main() {
 	fmt.Println("start")
 	fmt.Println(GetEnvFunc())
-    ming.TimeNow()
-	//GetEnvSvr()
-/* 	ming.StrFunc()
 
+	//获取服务器配置
+	GetEnvSvr()
+
+	//时间time，学习
+	ming.TimeNow()
+
+	//字符串操作
+	ming.StrFunc()
+
+	//键盘输入字段
 	fmt.Println("输入开始")
 	ming.Input()
-	fmt.Println("end") */
 
-
+	fmt.Println("end")
 }
 
 //GetEnvFunc 获取环境变量函数

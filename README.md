@@ -6,3 +6,7 @@ golang: go1.8
 
 ## GetEnvSvr() 获取cpu核数
 
+## ming.TimeNow() 时间的使用
+## ming.StrFunc() 常用字符串函数
+## ming.Input()  键盘输入
+
