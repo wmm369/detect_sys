@@ -9,4 +9,5 @@ golang: go1.8
 ## ming.TimeNow() 时间的使用
 ## ming.StrFunc() 常用字符串函数
 ## ming.Input()  键盘输入
+## ming.GetYaml()  获取yaml配置信息
 
