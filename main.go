@@ -19,7 +19,7 @@ type OsEnv struct {
 
 func main() {
 	fmt.Println("start")
-	fmt.Println(GetEnvFunc())
+	//fmt.Println(GetEnvFunc())
 
 	//获取服务器配置
 	GetEnvSvr()
@@ -28,13 +28,16 @@ func main() {
 	ming.TimeNow()
 
 	//字符串操作
-	ming.StrFunc()
+	//ming.StrFunc()
 
 	//键盘输入字段
 	fmt.Println("输入开始")
-	ming.Input()
+	//ming.Input()
 
 	fmt.Println("end")
+
+	//获取yaml文件配置
+	ming.GetYaml("./config/first.yaml")
 }
 
 //GetEnvFunc 获取环境变量函数

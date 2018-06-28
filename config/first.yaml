@@ -1,0 +1,7 @@
+SiteName: seeta
+SiteAddr: BeiJing
+Https: true
+Nginx:
+    Port: 443
+    LogPath:  /var/log//nginx/nginx.log
+    Path: /opt/nginx/
